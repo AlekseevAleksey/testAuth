@@ -8,7 +8,7 @@ public interface UserService {
 
     User findByID (int id);
 
-    User findBySSO (String sso);
+    example.model.User findBySSO (String sso);
 
     void saveUser (User user);
 
@@ -16,7 +16,7 @@ public interface UserService {
 
     void deleteUserBySSO (String sso);
 
-    List<User> findAllUser();
+    List<example.model.User> findAllUser();
 
     boolean isUserSSOUnique (Integer id, String sso);
 
